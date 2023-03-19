@@ -1,0 +1,186 @@
+/*Q1 CSS ここから*/
+.box {
+  margin: 0 auto;
+}
+.change-box {
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+}
+@media screen and (max-width: 960px) {/*960px未満の時は以下の設定をする*/
+  .change-box {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*Q1 CSS ここまで*/
+/*Q2 CSS ここから*/
+.color-change-box {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+}
+@media screen and (max-width: 960px) {
+  .color-change-box {
+    background-color: #007bff;
+  }
+}
+/*Q2 CSS ここまで*/
+/*Q3 CSS ここから*/
+.space-box {
+  display: flex;
+  justify-content: center;
+}
+.space-left-box {
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  margin-right: 150px;
+}
+.space-right-box {
+  width: 300px;
+  height: 300px;
+  background-color: #22ff00;
+}
+@media screen and (max-width: 960px) {
+  .space-left-box {
+    margin-right: 50px;
+  }
+}
+/*Q3 CSS ここまで*/
+/*Q4 CSS ここから*/
+.float-box {
+  height: 400px;
+  position: relative;
+}
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.left-box {
+  background-color: #ff0000;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.right-box {
+  background-color: #0008ff;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+@media screen and (max-width: 960px) {
+  .left-box {
+    float: none;
+  }
+  .right-box {
+    float: none;
+  }
+  .inner {
+    left: 40%;
+  }
+}
+/*Q4 CSS ここまで*/
+/*Q5 CSSここから*/
+.flex-box {
+  display: flex;
+  justify-content: center;/*左右中央*/
+  align-items: center;/*上下中央*/
+}
+.A-box {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  text-align: center;
+  line-height: 300px;/*高さが300pxのため、行間を親要素の高さに合わせる*/
+}
+.B-box {
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  text-align: center;
+  line-height: 300px;
+}
+.C-box {
+  width: 300px;
+  height: 300px;
+  background-color: #ff8400;
+  text-align: center;
+  line-height: 300px;
+}
+@media screen and (max-width: 960px) {
+  .flex-box {
+    flex-direction: row-reverse;
+  }
+}
+/*Q5 CSS ここまで*/
+/*Q6 CSS ここから*/
+.green-box {
+  width: 300px;
+  height: 300px;
+  background-color: #00ff51;
+  text-align: center;
+  line-height: 300px;
+}
+.raime-box {
+  width: 300px;
+  height: 300px;
+  background-color: #d4ff00;
+  text-align: center;
+  line-height: 300px;
+}
+.pink-box {
+  width: 300px;
+  height: 300px;
+  background-color: #ff00e1;
+  text-align: center;
+  line-height: 300px;
+}
+@media screen and (max-width: 960px) {
+  .green-box {
+    order: 2;/*真ん中に配置*/
+  }
+  .raime-box {
+    order: 1;/*1番左に配置*/
+  }
+  .pink-box {
+    order: 3;/*1番右側に配置*/
+  }
+}
+/*Q6 CSS ここまで*/
+/*Q7 CSS ここから*/
+.hide-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-left-box {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+}
+.green-center-box {
+  width: 300px;
+  height: 300px;
+  background-color: #00ff51;
+}
+.blue-right-box {
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  display: none;/*表示しない*/
+}
+@media screen and (max-width: 960px) {
+  .hide-box {
+    flex-direction: row-reverse;/*フレックスアイテムを逆にする*/
+  }
+  .red-left-box {
+    display: none;/*表示しない*/
+  }
+  .blue-right-box {
+    display: block;/*表示するようにする*/
+  }
+}
+/*Q7 CSS ここまで*/
